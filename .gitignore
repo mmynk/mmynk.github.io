@@ -1,0 +1,6 @@
+# os
+.DS_Store
+
+# website
+build/
+gc
