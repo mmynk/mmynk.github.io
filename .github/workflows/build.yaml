@@ -1,0 +1,16 @@
+name: Generate HTMLs
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: apt-get install -y pandoc
+      - name: Generate HTML files
+        run: make all
