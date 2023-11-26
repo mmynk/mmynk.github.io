@@ -8,7 +8,7 @@ BUILD_DOCS := $(addprefix build/,$(notdir $(SRC_DOCS:.md=.html))) $(addprefix bu
 BUILD_CSS := $(addprefix build/css/,$(notdir $(SRC_CSS)))
 PANDOC := pandoc
 
-PANDOC_OPTIONS := --standalone --to html5 --css $(SRC_CSS)
+PANDOC_OPTIONS := --standalone --to html5 --css $(SRC_CSS) --include-in-header header.html
 PANDOC_COMMAND := $(PANDOC) $(PANDOC_OPTIONS)
 
 .PHONY: all
@@ -17,6 +17,7 @@ all: $(BUILD_DOCS)
 build:
 	mkdir -p build/css
 	mkdir -p build/biohacking
+	cp assets/* build/
 
 build/index.html: src/index.md $(BUILD_CSS) | build
 	$(PANDOC_COMMAND) -s $< -o $@
@@ -29,13 +30,6 @@ build/biohacking/%.html: src/biohacking/%.md $(BUILD_CSS) | build
 
 build/css/%.css: css/%.css | build
 	cp $< $@
-
-.PHONY: install
-install: all
-	mkdir -p /var/www/mmynk.com
-	rm -rf /var/www/mmynk.com/*
-	[[ -d /var/www/mmynk.com/css ]] || mkdir /var/www/mmynk.com/css
-	cp -r build/* /var/www/mmynk.com/
 
 .PHONY: clean
 clean:
