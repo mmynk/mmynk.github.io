@@ -8,7 +8,7 @@ Being an avid cook, I've recently become more conscious of what goes into my foo
 Let's start by understanding what is fatty acid. Fatty acid is a carboxylic acid (an organic acid with a carboxyl group, R−COOH) with an aliphatic chain (straight chain compounds). Fat is derived from fatty acid. The type of fat is defined by the bond between carbon atoms. If the atoms are connected by a single bond, it is called saturated fat whereas if they are connected by a double bond, it is called unsaturated fat. Saturated fats are solid at room temperature, while unsaturated fats are liquid and considered healthier because they are less likely to clog arteries.
 
 <p align="center">
-    <img src="https://www.eufic.org/images/uploads/whats-in-food/Types-of-fats-01.png" alt="What are Fats Made of" width="500" />
+    <img src="/images/fats.png" alt="What are Fats Made of" />
 </p>
 
 ## Unsaturated fats
@@ -58,7 +58,7 @@ Considered the "bad" fats, saturated fats increase bad cholesterol (LDL) and the
 Understanding the distinction between "good" and "bad" fats guides the choice of cooking oil. The image below illustrates the composition of saturated, monounsaturated, and polyunsaturated fats in various oils.
 
 <p align="center">
-    <img src="https://cdn.agclassroom.org/media/uploads/LP841/Fatty_Acid_Profiles.png" alt="Fatty Acid Profiles of Common Fats and Oils" width="500" />
+    <img src="/images/oil-profiles.png" alt="Fatty Acid Profiles of Common Fats and Oils" />
 </p>
 
 It's evident that oils with high saturated fat content, like coconut and palm oil, should be avoided. Healthier options include olive, avocado, mustard, and safflower oil. However, this is not the whole story. The smoke point of an oil is also crucial in selecting the right one for cooking.
@@ -78,7 +78,7 @@ Smoke point is the temperature at which an oil starts to burn and smoke. Followi
 The below table shows the smoke point of different oils:
 
 <p align="center">
-    <img src="https://blog.mountainroseherbs.com/hs-fs/hubfs/CulinaryOil_SmokePoints.jpg?width=1200&name=CulinaryOil_SmokePoints.jpg" alt="Oil Smoke Point Chart" width="500" />
+    <img src="/images/oil-smoke-points.jpg" alt="Oil Smoke Point Chart" />
 </p>
 
 Note: The smoke point of mustard oil is 250°C (480°F).

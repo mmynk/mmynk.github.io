@@ -17,7 +17,7 @@ all: $(BUILD_DOCS)
 build:
 	mkdir -p build/css
 	mkdir -p build/biohacking
-	cp assets/* build/
+	cp -r assets/* build/
 
 build/index.html: src/index.md $(BUILD_CSS) | build
 	$(PANDOC_COMMAND) -s $< -o $@
