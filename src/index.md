@@ -1,7 +1,8 @@
 % mmynk's blog
 
 [About](about.html) |
-[Biohacking](biohacking/index.html)
+[Biohacking](biohacking/index.html) |
+[Contact](mailto:mohit(at)this-website-url)
 
 Date                            Post
 -----------------               -----------------
