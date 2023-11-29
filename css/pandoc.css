@@ -38,6 +38,11 @@ pre code {
     padding: 0px;
 }
 
+th,
+td {
+    padding: 0.25em 1em 0.25em 0;
+}
+
 img {
     padding: 0;
     display: block;
