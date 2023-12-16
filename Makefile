@@ -1,10 +1,11 @@
 SHELL := /bin/bash
 
 SRC_DOCS := $(wildcard src/*.md)
+SRC_TECH_DOCS := $(wildcard src/tech/*.md)
 SRC_BIO_DOCS := $(wildcard src/biohacking/*.md)
 SRC_CSS := /css/pandoc.css
 
-BUILD_DOCS := $(addprefix build/,$(notdir $(SRC_DOCS:.md=.html))) $(addprefix build/biohacking/,$(notdir $(SRC_BIO_DOCS:.md=.html)))
+BUILD_DOCS := $(addprefix build/,$(notdir $(SRC_DOCS:.md=.html))) $(addprefix build/tech/,$(notdir $(SRC_TECH_DOCS:.md=.html))) $(addprefix build/biohacking/,$(notdir $(SRC_BIO_DOCS:.md=.html)))
 BUILD_CSS := $(addprefix build/css/,$(notdir $(SRC_CSS)))
 PANDOC := pandoc
 
@@ -16,6 +17,7 @@ all: $(BUILD_DOCS)
 
 build:
 	mkdir -p build/css
+	mkdir -p build/tech
 	mkdir -p build/biohacking
 	cp -r assets/* build/
 
@@ -23,6 +25,9 @@ build/index.html: src/index.md $(BUILD_CSS) | build
 	$(PANDOC_COMMAND) -s $< -o $@
 
 build/%.html: src/%.md $(BUILD_CSS) | build
+	$(PANDOC_COMMAND) -s $< -o $@
+
+build/tech/%.html: src/tech/%.md $(BUILD_CSS) | build
 	$(PANDOC_COMMAND) -s $< -o $@
 
 build/biohacking/%.html: src/biohacking/%.md $(BUILD_CSS) | build
