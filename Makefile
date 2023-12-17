@@ -20,6 +20,7 @@ build:
 	mkdir -p build/tech
 	mkdir -p build/biohacking
 	cp -r assets/* build/
+	cp -r files/* build/
 
 build/index.html: src/index.md $(BUILD_CSS) | build
 	$(PANDOC_COMMAND) -s $< -o $@
