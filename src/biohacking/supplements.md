@@ -1,8 +1,31 @@
 % Supplements - Good, Bad and Ugly
 % December 16, 2023
 
-# Supplements
+<style type="text/css">
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        overflow-x: auto;
+    }
+    td, th {
+        border: 0.1em solid;
+        padding: 0.5em;
+    }
+    .odd {
+        background-color: #f2f2f2;
+    }
+    .even {
+        background-color: #ffffff;
+    }
+    th {
+        background-color: #cbcbcb;
+    }
+</style>
 
+# Supplements
 
 In the dynamic landscape of health and wellness, supplements have emerged as versatile aids designed to complement nutrition, prescription drugs, and behavior protocols. Supplements like vitamin D3 for people not getting enough sunlight or omega-3 fatty acids for people not getting enough fish in their diet have become quite popular. While their popularity has skyrocketed and they are really helpful in many cases, it's crucial to understand that supplements are not a panacea; there's no substitute for sunlight or a nourishing diet and lifestyle.
 
@@ -58,6 +81,235 @@ Plant based protein contain fewer branched-chain amino acids (BCAAs) than animal
 - More often than not it is advantageous to take supplements with food.
 - For dietary supplements, opt for formulations containing multiple vitamins and minerals.
 - Important to play the long game and not expect results overnight. Start with a small dose and increase gradually.
+
+## Recommended Dietary Allowance (RDA) or Daily Adequate Intake (AI)
+
+### Vitamins
+
+<table>
+    <thead>
+        <tr>
+            <th rowspan="2">Vitamin (Common Names)</th>
+            <th colspan="2">RDA / AI</th>
+            <th rowspan="2">Upper Limit</th>
+        </tr>
+        <tr>
+            <th>Men</th>
+            <th>Women</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>Vitamin A (preformed = retinol; beta-carotene can be converted to
+                Vitamin A)
+            </td>
+            <td>700 µg (2,333 IU)</td>
+            <td>900 µg (3,000 IU)</td>
+            <td>3,000 µg (about 10,000 IU)</td>
+        </tr>
+        <tr class="even">
+            <td>Thiamin (vitamin B1)</td>
+            <td>1.1 mg</td>
+            <td>1.2 mg</td>
+            <td>Not known</td>
+        </tr>
+        <tr class="odd">
+            <td>Riboflavin (vitamin B2)</td>
+            <td>1.1 mg</td>
+            <td>1.3 mg</td>
+            <td>Not known</td>
+        </tr>
+        <tr class="even">
+            <td>Niacin (vitamin B3; nicotinic acid)</td>
+            <td>14 mg</td>
+            <td>16 mg</td>
+            <td>35 mg</td>
+        </tr>
+        <tr class="odd">
+            <td>Pantothenic Acid (vitamin B5)</td>
+            <td>5 mg</td>
+            <td>5 mg</td>
+            <td>Not known</td>
+        </tr>
+        <tr class="even">
+            <td>Vitamin B6 (pyridoxal, pyridoxine, pyridoxamine)</td>
+            <td>Ages 19-50: 1.3 mgAges 51+: 1.5 mg</td>
+            <td>Ages 19-50: 1.3 mgAges 51+: 1.7 mg</td>
+            <td>100 mg</td>
+        </tr>
+        <tr class="odd">
+            <td>Biotin (vitamin B7)</td>
+            <td>30 µg</td>
+            <td>30 µg</td>
+            <td>Not known</td>
+        </tr>
+        <tr class="even">
+            <td>Folate (Folic acid; vitamin B9)</td>
+            <td>400 µg</td>
+            <td>400 µg</td>
+            <td>1,000 µg</td>
+        </tr>
+        <tr class="odd">
+            <td>Vitamin B12</td>
+            <td>2.4 µg</td>
+            <td>2.4 µg</td>
+            <td>Not known</td>
+        </tr>
+        <tr class="even">
+            <td>Vitamin C</td>
+            <td>75 mg(Smokers add 35 mg)</td>
+            <td>90 mg(Smokers add 35 mg)</td>
+            <td>2,000 mg</td>
+        </tr>
+        <tr class="odd">
+            <td>Choline</td>
+            <td>425 mg</td>
+            <td>550 mg</td>
+            <td>3,500 mg</td>
+        </tr>
+        <tr class="even">
+            <td>Vitamin D (calciferol)</td>
+            <td>Ages 19-50: 15 µg (600 IU)Ages 51-70: 15 µg (600 IU)Ages 71+: 20 µg
+                (800 IU)
+            </td>
+            <td>Ages 19-50: 15 µg (600 IU)Ages 51-70: 15 µg (600 IU)Ages 71+: 20 µg
+                (800 IU)
+            </td>
+            <td>100 µg (4,000 IU)</td>
+        </tr>
+        <tr class="odd">
+            <td>Vitamin E (alpha-tocopherol)</td>
+            <td>15 mg</td>
+            <td>15 mg</td>
+            <td>1,000 mg</td>
+        </tr>
+        <tr class="even">
+            <td>Vitamin K (phylloquinone, menadione)</td>
+            <td>90 µg</td>
+            <td>120 µg</td>
+            <td>Not known</td>
+        </tr>
+    </tbody>
+</table>
+
+## Minerals
+
+<table>
+    <thead>
+        <tr>
+            <th rowspan="2">Minerals</th>
+            <th colspan="2">RDA / AI</th>
+            <th rowspan="2">Upper Limit</th>
+        </tr>
+        <tr>
+            <th>Men</th>
+            <th>Women</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>Calcium</td>
+            <td>Ages 31-50: 1,000 mgAges 51+: 1,200 mg</td>
+            <td>Ages 31-50: 1,000 mgAges 51+: 1,200 mg</td>
+            <td>2,500 mg</td>
+        </tr>
+        <tr class="even">
+            <td>Chloride</td>
+            <td>Ages 19-50: 2.3 gramsAges 51-70: 2.0 gramsAges 71+: 1.8 grams</td>
+            <td>Ages 19-50: 2.3 gramsAges 51-70: 2.0 gramsAges 71+: 1.8 grams</td>
+            <td>Not known</td>
+        </tr>
+        <tr class="odd">
+            <td>Chromium</td>
+            <td>Ages 31-50: 25 µgAges 51+: 20 µg</td>
+            <td>Ages 31-50: 35 µgAges 51+: 30 µg</td>
+            <td>Not known</td>
+        </tr>
+        <tr class="even">
+            <td>Copper</td>
+            <td>900 µg</td>
+            <td>900 µg</td>
+            <td>10,000 µg</td>
+        </tr>
+        <tr class="odd">
+            <td>Fluoride</td>
+            <td>3 mg</td>
+            <td>4 mg</td>
+            <td>10 mg</td>
+        </tr>
+        <tr class="even">
+            <td>Iodine</td>
+            <td>150 µg</td>
+            <td>150 µg</td>
+            <td>1,100 µg</td>
+        </tr>
+        <tr class="odd">
+            <td>Iron</td>
+            <td>Ages 31-50: 18 mgAges 51+: 8 mg</td>
+            <td>Ages 31-50: 8 mgAges 51+: 8 mg</td>
+            <td>45 mg</td>
+        </tr>
+        <tr class="even">
+            <td>Magnesium</td>
+            <td>Ages 19-30: 310 mgAges 31-70+: 320 mg</td>
+            <td>Ages 19-30: 400 mgAges 31-70+: 420 mg</td>
+            <td>350 mg (from supplements)</td>
+        </tr>
+        <tr class="odd">
+            <td>Manganese</td>
+            <td>1.8 mg</td>
+            <td>2.3 mg</td>
+            <td>11 mg</td>
+        </tr>
+        <tr class="even">
+            <td>Molybdenum</td>
+            <td>45 µg</td>
+            <td>45 µg</td>
+            <td>2,000 µg</td>
+        </tr>
+        <tr class="odd">
+            <td>Nickel</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+        </tr>
+        <tr class="even">
+            <td>Phosphorus</td>
+            <td>700 mg</td>
+            <td>700 mg</td>
+            <td>Ages 31-70: 4,000 mgAges 71+: 3,000 mg</td>
+        </tr>
+        <tr class="odd">
+            <td>Potassium</td>
+            <td>Ages 14-18: 2,300 mgAges 19+: 2,600 mg</td>
+            <td>Ages 14-18: 3,000 mgAges 19+: 3,400 mg</td>
+            <td>Not known</td>
+        </tr>
+        <tr class="even">
+            <td>Selenium</td>
+            <td>55 µg</td>
+            <td>55 µg</td>
+            <td>400 µg</td>
+        </tr>
+        <tr class="odd">
+            <td>Sodium</td>
+            <td>1,500 mg</td>
+            <td>1,500 mg</td>
+            <td>Not determined; however, a chronic disease risk reduction intake has
+                been established
+            </td>
+        </tr>
+        <tr class="even">
+            <td>Zinc</td>
+            <td>8 mg</td>
+            <td>11 mg</td>
+            <td>40 mg</td>
+        </tr>
+    </tbody>
+</table>
+
+
+_From [The Nutrition Source, Harvard School of Public Health](https://www.hsph.harvard.edu/nutritionsource/vitamins/)._
 
 # Conclusion
 
