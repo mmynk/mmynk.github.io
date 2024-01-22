@@ -13,6 +13,10 @@ body {
     background: #fefefe;
 }
 
+p {
+    text-align: justify;
+}
+
 pre {
     background: #F1F3F5;
     font: 12px Monaco, Consolas, "Andale  Mono", "DejaVu Sans Mono", monospace;
