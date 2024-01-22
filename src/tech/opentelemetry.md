@@ -28,6 +28,7 @@ Without diving too deep into the architecture, the collector is composed of thre
 # Building a custom OpenTelemetry Collector
 
 For this POC, I wanted to build a custom collector that scrapes **virtual memory metrics** and exports them to Kafka.
+Also, I would like the exported format to be something defined by us (not OTLP or Prometheus).
 Let's see how we can leverage the OpenTelemetry Collector to build this pipeline.
 
 ## Step 0: Install the prerequisites
@@ -266,6 +267,8 @@ receivers:
     count: 2
 ```
 
+## Step 3: Define the exporter
+
 Before we write our own exporter, we can actually deploy our collector by using a pre-built exporter
 from the [OpenTelemetry Collector Contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib) repo.
 Let's add the [Prometheus exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/prometheusexporter) to our pipeline.
@@ -287,7 +290,11 @@ service:
         exporters: [prometheus]
 ```
 
-## Step 3: Deploy the collector
+### Writing a custom exporter
+
+TODO
+
+## Step 4: Deploy the collector
 
 Let's fire up the collector and see if it works.
 
@@ -311,10 +318,6 @@ $ ./otelcol-dev/otelcol --config otelcol.yaml
 We should now be able to see the metrics at `http://localhost:8888/metrics`.
 
 Yay! We have successfully built a custom OpenTelemetry collector.
-
-## Step 4: Build a custom exporter
-
-TODO
 
 # Links
 
