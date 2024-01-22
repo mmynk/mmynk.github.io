@@ -3,3 +3,4 @@
 Date                            Post
 -----------------               -----------------
 November 2023                   [Netlink in Rust: part 1 aka ethtool](netlink.html)
+January 2024                    [OpenTelemetry: Building a Custom Collector](opentelemetry.html)
