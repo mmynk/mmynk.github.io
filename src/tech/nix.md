@@ -119,8 +119,57 @@ alias nix_rebuild="nix run nixpkgs#home-manager -- switch --flake <flake-file-pa
 
 Now you can add the packages you want to install in the `home.nix` file and run `nix_rebuild` to apply the changes.
 
+### Updates and Cleanups
+
+The packages installed by Nix are pinned to the version pointed by the `flake.lock` file which is the latest version at the time of installation. To update the packages, you can run the following command:
+
+```sh
+nix flake update
+```
+
+For cleaning up the packages that are no longer needed, you can run:
+
+```sh
+nix store gc
+```
+
+Since you'll not be installing packages everyday, you bundle these commands into your alias.
+
+```sh
+alias nix_update="nix flake update && nix store gc"
+alias nix_rebuild="nix_update && nix run nixpkgs#home-manager -- switch --flake ~/.config/nix~#$(whoami)"
+```
+
 ### Managing Dotfiles
 
-TODO
+Now that we have our packages managed by Nix, we can take this a step further and manage our dotfiles using Nix. We can create a `dotfiles` directory in the `home-manager` directory and symlink the dotfiles to the home directory.
+
+In the below example, we're storing all the dotfiles and configs in a `dotfiles` directory in the `home-manager` directory. We'll symlink the `.zshrc` and `nvim` config files to the home directory and `~/.config` directory respectively.
+
+```nix
+{ config, pkgs, ... }:
+
+{
+  # ...
+  # Other default configurations
+  # ...
+
+  home.file.".zshrc" = {
+    source = config.lib.file.mkOutOfStoreSymlink ./dotfiles/zshrc;
+  };
+
+  xdg.configFile = {
+    "nvim" = {
+      source = config.lib.file.mkOutOfStoreSymlink ./dotfiles/config/nvim;
+      recursive = true;
+    }
+    # Add more configs here
+  };
+}
+```
+
+P.S.: I'd be remiss if I didn't mention this is not the true-Nix-style, often referred to as "impure". We are linking actual files in the traditional way (as we would do with other dotfile managers). If you would like to learn more about the Nix-style, I'd recommend checking out [this blog post](https://seroperson.me/2024/01/16/managing-dotfiles-with-nix/#configuring-things-in-nix-way). In general, it is recommended to use the Nix-style as it is more declarative and reproducible. With the impure way, you might run into some conflicts if you are not careful.
 
 # Nix on macOS
+
+TODO
