@@ -3,6 +3,7 @@
 [About](about.html) |
 [Tech](tech/index.html) |
 [Biohacking](biohacking/index.html) |
+[Projects](projects.html) |
 [Contact](mailto:mohit@mmynk.com)
 
 Date                            Post
