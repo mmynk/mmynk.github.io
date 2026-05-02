@@ -37,6 +37,10 @@ build/biohacking/%.html: src/biohacking/%.md $(BUILD_CSS) | build
 build/css/%.css: css/%.css | build
 	cp $< $@
 
+.PHONY: serve
+serve: all
+	python3 -m http.server 8000 --directory build/
+
 .PHONY: clean
 clean:
 	rm -rf build
